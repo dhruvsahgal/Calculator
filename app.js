@@ -22,30 +22,21 @@ var recieveOp = function(op){
     switch(operator){
         case 1:
             screenVal = values[0] + values[1];
-            document.getElementById("screen").innerHTML = screenVal;
-            console.log(screenVal);
             break;
         case 2:
              screenVal = values[0] - values[1];
-            document.getElementById("screen").innerHTML = screenVal;
-            console.log(screenVal);
             break;
         case 3:
             screenVal = values[0] * values[1];
-            document.getElementById("screen").innerHTML = screenVal;
-            console.log(screenVal);
             break;
         case 4:
              screenVal = values[0] / values[1];
-            document.getElementById("screen").innerHTML = screenVal;
-            console.log(screenVal);
             break;   
     };
-    console.log("Operator val = " + operator);      
+    document.getElementById("screen").innerHTML = screenVal;
+    console.log(screenVal);
+         
 };  
-
-
-
 
 
 var reset = function(){
