@@ -4,6 +4,7 @@ var screenVal = 0;
 var operators = [];
 var joined = [];
 var realfinal =0 ;
+var memory = 0;
 
 
 
@@ -49,20 +50,16 @@ var equals = function () {
             switch (operators[i]){
                 case "+":
                     realfinal = realfinal + parseInt(values[j]);
-                    console.log(" final is " + final);
                     break;
                 case "-":
                     realfinal = realfinal - parseInt(values[j]);
                     i++;
-                    console.log(" final is " + final);
                     break;
                 case "*":
                     realfinal = realfinal * parseInt(values[j]);
-                    console.log(" final is " + final);
                     break;
                 case "/":
                     realfinal = realfinal / parseInt(values[j]);
-                    console.log(" final is " + final);
                     break;
                 default:
                     console.log("Something went wrong");
@@ -72,7 +69,11 @@ var equals = function () {
     console.log("real final is " + realfinal);
 
     document.getElementById("screen").innerHTML = realfinal;
+};
 
+var addMemory = function(){
+    memory = parseInt(temp.join(""));
+    console.log(memory);
 
 };
 var clear = function () {

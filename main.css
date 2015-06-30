@@ -1,0 +1,42 @@
+button {
+    background-color: #FF9933;
+    box-shadow: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 2px 0px 2px ;
+    position: relative;
+    top: 5px;
+    bottom: 5px;
+    font-family: sans-serif;
+
+}
+#screen {
+    width: 176px;
+    background-color: lightgrey;
+    font-family: sans-serif;
+    text-align: center;
+}
+#container{
+    width: 176px;
+}
+#zero {
+    left: 44px;
+}
+#operator {
+    background-color: Black;
+    color: white;
+}
+#placeholder {
+    background-color: white;
+
+}
+#equals{
+    background-color: forestgreen;
+}
+
+#reset {
+    width: 176px;
+    background-color: indianred;
+}
+

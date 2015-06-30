@@ -3,24 +3,27 @@
     <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>A calculator</title>  
         
     </head>
     <body>
         <div id="screen">0</div>
-        <button id="number" onclick="input(1)">1</button>
-        <button id="number" onclick="input(2)">2</button>
-        <button id="number" onclick="input(3)">3</button>
-        <br>
-        <button id="number" onclick="input(4)">4</button>
-        <button id="number" onclick="input(5)">5</button>
-        <button id="number" onclick="input(6)">6</button>
-        <br>
-        <button id="number" onclick="input(7)">7</button>
-        <button id="number" onclick="input(8)">8</button>
-        <button id="number" onclick="input(9)">9</button>
-        <br>
-        <button id="number" onclick="input(0)">0</button>
+        <div id="container">
+            <button id="number" onclick="input(1)">1</button>
+            <button id="number" onclick="input(2)">2</button>
+            <button id="number" onclick="input(3)">3</button>
+            <br>
+            <button id="number" onclick="input(4)">4</button>
+            <button id="number" onclick="input(5)">5</button>
+            <button id="number" onclick="input(6)">6</button>
+            <br>
+            <button id="number" onclick="input(7)">7</button>
+            <button id="number" onclick="input(8)">8</button>
+            <button id="number" onclick="input(9)">9</button>
+            <br>
+            <button id="zero" onclick="input(0)">0</button>
+        </div>
         <br>
         <button id="operator" onclick="operator('+')">+</button>
         <button id="operator" onclick="operator('-')">-</button>
@@ -28,8 +31,10 @@
         <button id="operator" onclick="operator('/')" >/</button>
         <br>
         <button id="equals" onclick="equals()" >=</button>
+        <button id="memory" onclick ="addMemory()">M</button>
+         <button id="memory" onclick ="clearMemeory()">MC</button>
         <br>
-        <button id="reset" onclick="clear()">Clear</button>
+        <button id="reset" onclick="clear()">CLEAR</button>
     </body>
     
     <script src=app.js></script>
